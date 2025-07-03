@@ -27,9 +27,15 @@ const Navbar = () => {
     <>
       <div class={navwrap}>
         <nav class={navbar}>
-          <Link href="/">
-            <h1 className="nav-heading">Prescience Corporation</h1>
-          </Link>
+         <div className="nav-logo-wrapper" style={{display: 'flex', alignItems: 'center'}}>
+  <img 
+    src="images/logo.png" 
+    alt="Prescience Corporation Logo" 
+    className="nav-logo" 
+    style={{width: '70px', height: 'auto', marginRight: '10px'}} 
+  />
+  <h4 className="nav-heading">Prescience Corporation</h4>
+</div>
           {/* <div className="color-block"></div> */}
           <div
             class={`menu-toggle ${isActive ? "is-active" : ""}`}
